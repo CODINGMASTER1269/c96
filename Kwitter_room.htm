@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwitter Room</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" id="css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <button id="logout" onclick="logout()" class="glyphicom glyphicon btn btn-primary"></button>
+            <center>
+                <h1 class="header">
+                    Kwitter
+                    <sup></sup>
+                </h1>
+                <h3 id="user_name" class="colour_white"></h3>
+                <div class="form-group input_div_room_page">
+                <label>#Add Room:</label>  
+                <input type="text" id="room_name" class="form-control" placeholder="#Room Name"></iput>  
+                </div>
+                <button onclick="AddRoom()" class="btn btn-success">#AddRoom</button>
+                <h3 class="colour_yellow"><div id="#TRENDINGROOMS"></div></h3>
+            </center>
+        </div>
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>
